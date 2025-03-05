@@ -1,6 +1,14 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin
+
+module.exports = {
+  // your webpack config is here
+  plugins: [new BundleAnalyzerPlugin()],
+}
+
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
@@ -43,8 +51,8 @@ module.exports = {
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        'users': 'users@http://localhost:8081/remoteEntry.js',
-        'tasks': 'tasks@http://localhost:8082/remoteEntry.js',
+        users: 'users@http://localhost:8081/remoteEntry.js',
+        tasks: 'tasks@http://localhost:8082/remoteEntry.js',
       },
       exposes: {},
       shared: {
