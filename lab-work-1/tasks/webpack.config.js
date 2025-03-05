@@ -44,7 +44,7 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        './TasksList': './src/components/TasksList.js',
+        './TaskList': './src/components/TaskList.js',
       },
       shared: {
         ...deps,

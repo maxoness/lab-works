@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import TasksList from './components/TasksList';
+import TaskList from './components/TaskList';
 
 import "./index.css";
 
@@ -16,7 +16,7 @@ const App = () => {
     </div>
 
     <Suspense fallback={<div>Loading...</div>}>
-      <TasksList jwt={jwt} />
+      <TaskList jwt={jwt} />
     </Suspense>
   </>
 };

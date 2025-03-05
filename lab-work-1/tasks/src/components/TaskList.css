@@ -1,9 +1,9 @@
-.tasks-list {
+.task-list {
     text-align: left;
     width: 50vmin;
 }
 
-.tasks-list h3 {
+.task-list h3 {
     text-align: center;
 }
 .completed {

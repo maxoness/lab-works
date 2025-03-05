@@ -13,7 +13,7 @@ const Welcome = lazy(() => import('users/Welcome').catch(() => {
 })
 );
 
-const TaskList = lazy(() => import('tasks/TasksList').catch(() => {
+const TaskList = lazy(() => import('tasks/TaskList').catch(() => {
   return { default: () => <div className='error'>Component is not available!</div> };
 })
 );

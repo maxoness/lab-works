@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import api from '../utils/api';
-import './TasksList.css';
+import './TaskList.css';
 
-export default function TasksList({ jwt }) {
+export default function TaskList({ jwt }) {
     const [tasks, setTasks] = useState([]);
 
     useEffect(() => {
@@ -29,7 +29,7 @@ export default function TasksList({ jwt }) {
     }
 
     return (
-        <div className='tasks-list'>
+        <div className='task-list'>
             <h3>Задачи на сегодня</h3>
             {
                 tasks.map((x) => {
