@@ -1,0 +1,3 @@
+[submodule "sprint-2/lab-2.3-apisix-consul/apisix-docker"]
+	path = sprint-2/lab-2.3-apisix-consul/apisix-docker
+	url = https://github.com/maxoness/apisix-docker.git
