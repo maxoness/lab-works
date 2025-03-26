@@ -3,7 +3,7 @@ title FitLife Web Application Component Diagram
 
 top to bottom direction
 
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!include /home/runner/work/lab-works/lab-works/sprint-3/lab1-plantuml-c4/diagrams/C4_Component.puml
 
 Container_Boundary(FitLifeSystem, "FitLife System") {
   Container(WebApp, "Web Application", "Java, Spring", "Handles user interactions")
