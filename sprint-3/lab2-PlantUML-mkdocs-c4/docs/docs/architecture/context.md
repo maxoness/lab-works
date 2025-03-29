@@ -1,4 +1,4 @@
-## PUML Diagram
+## Context Diagram
 
 ```puml
 @startuml
