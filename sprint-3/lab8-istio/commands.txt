@@ -1,0 +1,10 @@
+#reboot docker desltop after adding istioctl to environment and execute it from docker terminal
+
+istioctl install
+
+kubectl label namespace default istio-injection=enabled
+
+kubectl apply -f .\helloworld\helloworld.yaml
+kubectl apply -f .\helloworld\helloworld-gateway.yaml
+
+kubectl get pods 
