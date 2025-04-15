@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'lab-works/sprint-3/**'
+      - 'sprint-3/**'
   pull_request:
     branches:
       - main
     paths:
-      - 'lab-works/sprint-3/**'
+      - 'sprint-3/**'
 
 jobs:
   generate-diagrams:
